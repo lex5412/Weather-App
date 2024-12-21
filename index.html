@@ -16,12 +16,12 @@
   <body>
     <div class="weather-lexi">
       <header>
-        <form class="search-form">
+        <form class="search-form" id="search-form">
           <input
             type="search"
             placeholder="Enter a city..."
             required
-            class="search-form-input"
+            id="search-form-input"
           />
           <input type="submit" value="Search" class="search-form-button" />
         </form>
@@ -31,12 +31,16 @@
           <div>
             <h1 class="weather-app-city" id="city">Kingston</h1>
             <p class="weather-app-details">
-              Monday 12:51, sunny <br />
-              humidity: <strong>75%</strong>, Wind: <strong>7.68m/h</strong>
+              <span id="time"></span>
+              <span id="description"></span> <br />
+              humidity: <strong id="humidity"></strong>, Wind:
+              <strong id="wind-speed"></strong>
             </p>
           </div>
           <div class="weather-app-temperature-container">
-            <div class="weather-app-icon">🌞</div>
+            <div>
+              <div id="icon"></div>
+            </div>
             <div class="weather-app-temperature" id="temperature">29</div>
             <div class="weather-app-unit">°C</div>
           </div>
